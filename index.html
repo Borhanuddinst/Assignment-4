@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/jobs.css">
+
+    <link rel="shortcut icon" href="image/job.png" type="image/x-icon">
+
+    <title>Job Application Tracker</title>
+</head>
+<body>
+    <div class="container">
+
+    <div class="dashboard">
+        <h1>Job Application Tracker</h1>
+
+        <div class="stats">
+        <div class="stat-card">
+            <h3>Total</h3>
+            <p id="totalCount">8</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Interview</h3>
+            <p id="interviewCount" class="green">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Rejected</h3>
+            <p id="rejectedCount" class="red">0</p>
+        </div>
+        </div>
+    </div>
+
+  
+  <div class="section-header">
+    <h2>Available Jobs</h2>
+    <span id="sectionCount">8 jobs</span>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" data-tab="all">All</div>
+    <div class="tab" data-tab="interview">Interview</div>
+    <div class="tab" data-tab="rejected">Rejected</div>
+  </div>
+
+  <div id="jobContainer">
+
+    <!-- 1 -->
+    <div class="job-card" data-status="all">
+      <button class="delete-btn">Delete</button>
+      <h3>Mobile First Corp</h3>
+      <div class="position">React Native Developer</div>
+      <div class="job-info">Remote • Full-time • $130,000 - $175,000</div>
+      <div class="status-badge">NOT APPLIED</div>
+      <div class="job-desc">
+        Build cross-platform mobile applications using React Native and serve millions of global users.
+      </div>
+      <div class="buttons">
+        <button class="interview-btn">INTERVIEW</button>
+        <button class="rejected-btn">REJECTED</button>
+      </div>
+    </div>
+
+
+
+
+    </div>
+
+  <div class="no-jobs" id="noJobs">
+    <img src="image/jobs.png">
+    <h3>No jobs available</h3>
+    <p>Check back soon for new job opportunities</p>
+  </div>
+
+        
+    
+    <script src="js/jobs.js"></script>
+</body>
+</html>
